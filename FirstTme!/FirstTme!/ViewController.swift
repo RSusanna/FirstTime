@@ -2,7 +2,7 @@
 //  ViewController.swift
 //  FirstTme!
 //
-//  Created by Susanna Zakaryan on 28.05.2023.
+//  Created by SusannaR on 28.05.2023.
 //
 
 import UIKit
