@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="21701" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
-    <device id="retina6_72" orientation="portrait" appearance="light"/>
+    <device id="retina6_12" orientation="portrait" appearance="light"/>
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="21678"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
@@ -13,28 +13,31 @@
             <objects>
                 <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="FirstTme_" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
-                        <rect key="frame" x="0.0" y="0.0" width="430" height="932"/>
+                        <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="yZo-ic-PTj">
-                                <rect key="frame" x="165" y="799.66666666666663" width="100.33333333333331" height="45.333333333333371"/>
-                                <color key="backgroundColor" systemColor="secondarySystemGroupedBackgroundColor"/>
-                                <constraints>
-                                    <constraint firstAttribute="width" secondItem="yZo-ic-PTj" secondAttribute="height" multiplier="75:34" id="nRx-ym-TwD"/>
-                                </constraints>
-                                <color key="tintColor" white="0.33333333333333331" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                <state key="normal" title="Button"/>
-                                <buttonConfiguration key="configuration" style="tinted" title="Кнопочка"/>
-                            </button>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="top" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Hello, world!" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumScaleFactor="0.5" translatesAutoresizingMaskIntoConstraints="NO" id="KwS-pd-aDb">
-                                <rect key="frame" x="111" y="442" width="208" height="48"/>
+                                <rect key="frame" x="92.666666666666686" y="402" width="208" height="48"/>
                                 <constraints>
-                                    <constraint firstAttribute="width" secondItem="KwS-pd-aDb" secondAttribute="height" multiplier="13:3" id="lkX-2f-HM0"/>
+                                    <constraint firstAttribute="width" relation="greaterThanOrEqual" secondItem="KwS-pd-aDb" secondAttribute="height" multiplier="13:3" id="lkX-2f-HM0"/>
                                 </constraints>
                                 <fontDescription key="fontDescription" type="system" pointSize="40"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="yZo-ic-PTj">
+                                <rect key="frame" x="132.66666666666666" y="730" width="127.99999999999997" height="35"/>
+                                <color key="backgroundColor" systemColor="secondarySystemGroupedBackgroundColor"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" relation="greaterThanOrEqual" secondItem="yZo-ic-PTj" secondAttribute="height" multiplier="75:34" id="nRx-ym-TwD"/>
+                                </constraints>
+                                <color key="tintColor" white="0.33333333333333331" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="tinted" title="Secret button"/>
+                                <connections>
+                                    <action selector="makeButtonAct:" destination="BYZ-38-t0r" eventType="touchUpInside" id="X3c-aH-6bw"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                         <color key="backgroundColor" red="0.54318799198926593" green="0.81583717449654225" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
@@ -45,10 +48,14 @@
                             <constraint firstItem="KwS-pd-aDb" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="oeh-BU-ThD"/>
                         </constraints>
                     </view>
+                    <connections>
+                        <outlet property="HelloWorldLabel" destination="KwS-pd-aDb" id="hUr-aB-Dxe"/>
+                        <outlet property="toggleBotton" destination="yZo-ic-PTj" id="HYJ-XM-pfF"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="62.790697674418603" y="-36.051502145922747"/>
+            <point key="canvasLocation" x="61.832061068702288" y="-36.619718309859159"/>
         </scene>
     </scenes>
     <resources>
